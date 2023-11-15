@@ -1,0 +1,9 @@
+.active {
+    color:  #2196F3; /* Change the color as per your design */
+    font-weight: bold; /* Example style for the active link */
+  }
+  
+  /* Your CSS file */
+  .transition {
+    transition: padding 0.4s ease; /* Change 0.3s to your desired transition duration */
+  }
