@@ -28,7 +28,7 @@ const WhatClientsSay = () => {
                         repeat={Infinity} // Repeat this Animation Sequence infinitely
                         reset={true}
                     />
-                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-2 lg:bottom-3'>
+                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-3 md:bottom-9 lg:bottom-5'>
                         <div className='flex items-center'>
                             <div className='h-14 w-14'><img className='h-full w-full rounded-full' src={img} alt="" /></div>
                             <div className='ps-2 text-left'>
@@ -57,7 +57,7 @@ const WhatClientsSay = () => {
                         repeat={Infinity} // Repeat this Animation Sequence infinitely
                         reset={true}
                     />
-                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-2 lg:bottom-3'>
+                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-3 md:bottom-9 lg:bottom-5'>
                         <div className='flex items-center'>
                             <div className='h-14 w-14'><img className='h-full w-full rounded-full' src={img2} alt="" /></div>
                             <div className='ps-2 text-left'>
@@ -86,7 +86,7 @@ const WhatClientsSay = () => {
                         repeat={Infinity} // Repeat this Animation Sequence infinitely
                         reset={true}
                     />
-                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-2 lg:bottom-3'>
+                    <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-3 md:bottom-9 lg:bottom-5'>
                         <div className='flex items-center'>
                             <div className='h-14 w-14'><img className='h-full w-full rounded-full' src={img} alt="" /></div>
                             <div className='ps-2 text-left'>
