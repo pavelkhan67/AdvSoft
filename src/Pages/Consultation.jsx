@@ -13,35 +13,35 @@ const Consultation = () => {
         },
     };
     return (
-        <div className="pt-10 lg:pt-14" id='service'>
+        <div className="pt-10 lg:pt-12" id='service'>
             <div className="text-center relative h-[550px] md:h-[420px]">
                 <Lottie options={lottieOptions} height={'100%'} width={'100%'} />
                 <div className="absolute inset-0 bg-black opacity-70 flex flex-col justify-center items-center">
                     <h2 className="text-3xl md:text-4xl font-semibold text-white">Integrate, Secure & Scale Your Business</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 mt-5 md:mt-8 gap-1 md:gap-3 lg:gap-5 px-1 md:px-3 lg:px-5 text-white">
                         <div
-                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
+                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
                             <img class="w-20" src="	https://www.divineit.net/media/original_images/ERP-Business.png" alt="" />
                             <h2 class="text-lg font-semibold">ERP & Business Software</h2>
                         </div>
                         <div
-                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
+                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
                             <img class="w-20" src="	https://www.divineit.net/media/original_images/Security-and-Infrastructure.png" alt="" />
                             <h2 class="text-lg font-semibold">Security & Infrastructure</h2>
                         </div>
                         <div
-                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
+                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-500 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
                             <img class="w-20" src="https://www.divineit.net/media/original_images/Telecommunication-sky.png" alt="" />
                             <h2 class="text-lg font-semibold">Telecom Software</h2>
                         </div>
                         <div
-                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-600 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
+                            class="border rounded-md transition-all duration-500 border-slate-400 hover:border-blue-500 hover:text-blue-600 hover:shadow-md hover:shadow-slate-500 flex flex-col justify-center items-center p-3 md:p-4 lg:p-8">
                             <img class="w-20" src="https://www.divineit.net/media/original_images/Business.png" alt="" />
                             <h2 class="text-lg font-semibold">IT & Business Services</h2>
                         </div>
                     </div>
                     <button
-                        class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md bg-blue-800 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
+                        class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md bg-blue-700 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                         Contact Us 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-4 inline-block">

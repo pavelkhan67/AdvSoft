@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import img from '../assets/home/img3.jpg';
+import img from '../assets/home/user.jpg';
+import img2 from '../assets/home/user1.jpg';
 import img1 from '../assets/home/photo_collage.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import { Fade } from 'react-reveal';
@@ -10,8 +11,8 @@ const WhatClientsSay = () => {
 
     return (
         <div id='review'>
-            <Carousel className='text-center pt-10 lg:pt-14' autoPlay={true} interval={6000} infiniteLoop={true} showThumbs={false} transitionTime={1500} showStatus={false}>
-                <div className='relative'>
+            <Carousel className='text-center pt-10 lg:pt-12' autoPlay={true} interval={6000} infiniteLoop={true} showThumbs={false} transitionTime={1500} showStatus={false}>
+                <div className='relative lg:me-1'>
                     <img className='h-[400px] lg:h-[380px] w-full ' src={img1} alt="" />
                     <TypeAnimation
                         className='text-3xl md:text-4xl font-semibold absolute top-5 md:top-10 lg:top-12 left-1' style={{ color: 'rgba(31, 52, 122, 1)' }}
@@ -40,7 +41,7 @@ const WhatClientsSay = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative lg:me-1'>
                     <img className='h-[400px] lg:h-[380px] w-full' src={img1} alt="" />
                     <TypeAnimation
                         className='text-3xl md:text-4xl font-semibold absolute top-5 md:top-10 lg:top-12 left-1' style={{ color: 'rgba(31, 52, 122, 1)' }}
@@ -58,7 +59,7 @@ const WhatClientsSay = () => {
                     />
                     <div className='border border-slate-300 rounded bg-white p-4 m-8 md:m-14 lg:m-20 absolute bottom-2 lg:bottom-3'>
                         <div className='flex items-center'>
-                            <div className='h-14 w-14'><img className='h-full w-full rounded-full' src={img} alt="" /></div>
+                            <div className='h-14 w-14'><img className='h-full w-full rounded-full' src={img2} alt="" /></div>
                             <div className='ps-2 text-left'>
                             <Fade left><p className='text-blue-500 text-2xl'>Pavel Khan</p></Fade>
                                 <p>User, Normal User</p>
@@ -69,7 +70,7 @@ const WhatClientsSay = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative lg:me-1'>
                     <img className='h-[400px] lg:h-[380px] w-full' src={img1} alt="" />
                     <TypeAnimation
                         className='text-3xl md:text-4xl font-semibold absolute top-5 md:top-10 lg:top-12 left-1' style={{ color: 'rgba(31, 52, 122, 1)' }}

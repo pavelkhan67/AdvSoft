@@ -16,7 +16,7 @@ const Navbar = () => {
         };
     }, []);
 
-    const navbarPadding = scrollPosition > 100 ? 'py-1' : 'py-3';
+    const navbarPadding = scrollPosition > 100 ? 'py-0' : 'py-2';
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -133,7 +133,7 @@ const Navbar = () => {
                     <li><a className="btn btn-ghost btn-sm normal-case text-base" href='#' onClick={(event) => handleClick(event, 'review')}>Reviews</a></li>
                     <li><a className="btn btn-ghost btn-sm normal-case text-base" href='#' onClick={(event) => handleClick(event, 'contact')}>Contact</a></li>
                 </ul>
-                <a className="btn btn-outline btn-sm text-blue-500 bg-slate-100 border-0 border-b-4 border-r-4 border-blue-600 me-4 md:me-2 ms-1">Login</a>
+                <a className="btn btn-outline btn-sm text-blue-400 bg-slate-100 border-0 border-b-4 border-r-4 border-blue-500 me-4 md:me-2 ms-1">Login</a>
             </div>
         </div>
     );

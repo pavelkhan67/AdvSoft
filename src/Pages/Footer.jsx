@@ -6,7 +6,7 @@ import img2 from '../assets/images/footer.png'
 const Footer = () => {
     return (
         <div>
-            <div class="flex justify-between items-center py-4 md:py-1 px-1" style={{backgroundColor:'#F7F7F7'}}>
+            <div class="flex justify-between items-center py-4 md:py-1 px-1" style={{ backgroundColor: '#F7F7F7' }}>
                 <div><img className='h-14 w-48 rounded-sm' src={img1} alt="" /></div>
                 <div class="flex justify-center items-center gap-2 md:gap-5">
                     <h3 class="font-semibold">FOLLOW US</h3>
@@ -30,95 +30,52 @@ const Footer = () => {
             </div>
 
             {/* Main Footer part */}
-            <div class="bg-white">
-                <div class="md:grid grid-cols-6 pt-8 ps-5 max-w-[1200px] mx-auto">
-                    <div class="grid col-span-1 md:ms-0">
-                        <img src={img2} alt="" />
-                    </div>
-                    <div class="grid col-span-5 pb-8 lg:ms-5">
-                        <div class="grid grid-cols-2 md:grid-cols-5 space-y-5 md:space-y-0">
-                            <div class="space-y-2 mt-5 md:mt-0">
-                                <h3 class="text-sm font-semibold">PRODUCTS</h3>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-sm font-semibold">PRODUCTS</h3>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-sm font-semibold">SERVICES</h3>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-sm font-semibold">COMPANY</h3>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismERP</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">LinesPay</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">OneBook</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Centroid</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Switch</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">Core4Xtreme</a></p>
-                                <p class="hover:text-blue-500 text-sm"><a href="">PrismVAT</a></p>
-                            </div>
-                            <div class="space-y-2">
-                                <h3 class="text-sm font-semibold">CONTACT US</h3>
-                                <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">z
-                                    <path
-                                        d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z" />
-                                </svg>+00811223344</p>
-                                <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                    <path
-                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                                </svg>+00811223344</p>
-                                <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                    <path
-                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                                </svg>+00811223344</p>
-                                <p class="hover:text-blue-500 text-sm flex items-center gap-2"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">z
-                                    <path
-                                        d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-                                </svg>abc@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 py-5 px-1 text-base-content">
+                <aside>
+                    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+                    <p>Adventure Soft Ltd.<br />Providing reliable tech since 2018</p>
+                </aside>
+
+                <div class="space-y-1">
+                    <h3 class="font-semibold">Services</h3>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Branding</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Design</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Marketing</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Advertisement</a></p>
+                </div>
+
+                <div class="space-y-1 mt-5 md:mt-0">
+                    <h3 class="font-semibold">Company</h3>
+                    <p class="hover:text-blue-500 text-sm"><a href="">About us</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Contact</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Jobs</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Press Kit</a></p>
+                </div>
+
+                <div class="space-y-1 mt-5 md:mt-0">
+                    <h3 class="font-semibold">Legal</h3>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Terms of use</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Privacy policy</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Cookie policy</a></p>
+                    <p class="hover:text-blue-500 text-sm"><a href="">Others policy</a></p>
+                   
                 </div>
             </div>
 
-        {/* Copyright Section */}
-        <section class="bg-blue-500">
-            <div class="flex justify-between px-1 text-white py-3 items-center max-w-[1200px] mx-auto">
-                <div class="md:flex gap-4">
-                    <a>Sitemap</a>
-                    <a>Terms Of Service</a>
-                    <a>Privacy Policy</a>
-                    <a>Treadmarks</a>
+            {/* Copyright Section */}
+            <section class="bg-blue-500">
+                <div class="flex justify-between px-1 text-white py-3 items-center max-w-[1200px] mx-auto">
+                    <div class="md:flex gap-4">
+                        <a className='hidden md:flex' href=''>Sitemap</a>
+                        <a href=''>Terms Of Service</a>
+                        <a  className='hidden md:flex' href=''>Privacy Policy</a>
+                        <a  className='hidden md:flex' href=''>Treadmarks</a>
+                    </div>
+                    <div>
+                        <p class="text-white"> &#169; Adventure Soft Ltd. 2023</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="text-white"> &#169; Adventure Soft Ltd. 2023</p>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
     );
 };
