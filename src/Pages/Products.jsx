@@ -2,6 +2,33 @@ import React from 'react';
 import img1 from '../assets/products/Prism_VAT.png'
 
 const Products = () => {
+    const scrollToContactSection = () => {
+        const productSection = document.getElementById('contact');
+        if (productSection) {
+            const targetPosition = productSection.offsetTop; // Get the position of the target element
+            const startPosition = window.pageYOffset; // Get the current position
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // Duration of the scroll animation in milliseconds
+            let start = null;
+
+            const smoothScroll = (timestamp) => {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const percentage = Math.min(progress / duration, 1);
+
+                window.scrollTo(0, startPosition + distance * ease(percentage));
+
+                if (progress < duration) {
+                    requestAnimationFrame(smoothScroll);
+                }
+            };
+
+            const ease = (t) => t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // Easing function, can be adjusted for different effects
+
+            requestAnimationFrame(smoothScroll);
+        }
+    };
+
     return (
         <div className="mt-10 lg:mt-12" id='product'>
             {/* <p className='text-4xl text-center font-semibold' style={{ color: 'rgba(31, 52, 122, 1)' }}>----- Our Products -----</p> */}
@@ -26,13 +53,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>
@@ -45,13 +72,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>
@@ -64,13 +91,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>
@@ -83,13 +110,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>
@@ -102,13 +129,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>
@@ -121,13 +148,13 @@ const Products = () => {
                         <p className='text-xl font-semibold mb-2'>Product-1</p>
                         <p className='text-justify pe-1 lg:pe-2 mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti accusantium corporis itaque minus doloremque pariatur, nesciunt nobis assumenda repudiandae perferendis rem architecto.</p>
                         <a href='' className='underline'>Product Link</a>
-                        <a className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white md:hidden mt-3' href="">Take Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
-                        <a className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <button onClick={scrollToContactSection} className='btn btn-sm bg-white hidden md:flex w-fit mt-3' href="">Contact for Service<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                        </svg></a>
+                        </svg></button>
 
                     </div>
                 </div>

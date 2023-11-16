@@ -11,6 +11,32 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
+    const scrollToProductSection = () => {
+        const productSection = document.getElementById('product');
+        if (productSection) {
+            const targetPosition = productSection.offsetTop; // Get the position of the target element
+            const startPosition = window.pageYOffset; // Get the current position
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // Duration of the scroll animation in milliseconds
+            let start = null;
+
+            const smoothScroll = (timestamp) => {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const percentage = Math.min(progress / duration, 1);
+
+                window.scrollTo(0, startPosition + distance * ease(percentage));
+
+                if (progress < duration) {
+                    requestAnimationFrame(smoothScroll);
+                }
+            };
+
+            const ease = (t) => t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // Easing function, can be adjusted for different effects
+
+            requestAnimationFrame(smoothScroll);
+        }
+    };
     useEffect(() => {
         AOS.init();
     }, [])
@@ -30,14 +56,10 @@ const Banner = () => {
                                 <h2 class="text-3xl md:text-4xl font-bold">Welcome To Adventure Soft Ltd,  </h2>
                                 <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>A Private Software Technology Park</h2>
                                 <p className='text-justify'>Welcome to Adventure Soft Ltd, a leading private software technology park dedicated to providing cutting-edge solutions for your business needs. We understand the dynamic nature of the digital landscape, and our team of skilled professionals is committed to delivering innovative and tailored software solutions.</p>
-                                <div className='flex gap-5 '>
-                                    <Link to='/places'>
-                                        <button className='btn text-blue-400 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                                        </svg>
-                                        </button>
-                                    </Link>
-                                </div>
+                                <button onClick={scrollToProductSection} className='btn text-blue-500 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See Our Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -48,14 +70,10 @@ const Banner = () => {
                                 <h2 class="text-3xl md:text-4xl font-bold">Welcome To Adventure Soft Ltd,  </h2>
                                 <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>A Core Software Development Company</h2>
                                 <p className='text-justify'>We specialize in creating bespoke software solutions tailored to your unique business processes. Our experienced developers work closely with you to understand your requirements and deliver solutions that align perfectly with your objectives.</p>
-                                <div className='flex gap-5 '>
-                                    <Link to='/places'>
-                                        <button className='btn text-blue-400 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                                        </svg>
-                                        </button>
-                                    </Link>
-                                </div>
+                                <button onClick={scrollToProductSection} className='btn text-blue-500 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See Our Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -66,14 +84,10 @@ const Banner = () => {
                                 <h2 class="text-3xl md:text-4xl font-bold">Welcome To Adventure Soft Ltd,  </h2>
                                 <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>An Application Development Company</h2>
                                 <p className='text-justify'>We design and develop applications that provide a seamless user experience. Our goal is to enhance your digital presence and optimize functionality. With a commitment to excellence, we blend cutting-edge technology with creative prowess to bring your digital visions to life.</p>
-                                <div className='flex gap-5 '>
-                                    <Link to='/places'>
-                                        <button className='btn text-blue-400 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                                        </svg>
-                                        </button>
-                                    </Link>
-                                </div>
+                                <button onClick={scrollToProductSection} className='btn text-blue-500 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See Our Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -84,14 +98,10 @@ const Banner = () => {
                                 <h2 class="text-3xl md:text-4xl font-bold">Welcome To Adventure Soft Ltd,  </h2>
                                 <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>An IT Consultancy Company</h2>
                                 <p className='text-justify'>As your trusted technology partner, we provide expert consultancy services to help you make informed decisions about your IT infrastructure. Whether it's system integration, cybersecurity, or strategic planning, we've got you covered.</p>
-                                <div className='flex gap-5 '>
-                                    <Link to='/places'>
-                                        <button className='btn text-blue-400 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                                        </svg>
-                                        </button>
-                                    </Link>
-                                </div>
+                                <button onClick={scrollToProductSection} className='btn text-blue-500 border-0 border-b-4 border-r-4 border-blue-500 hover:bg-white hover:border-slate-500'>See Our Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                </svg>
+                                </button>
                             </div>
                         </div>
                     </div>

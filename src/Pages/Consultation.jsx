@@ -4,6 +4,32 @@ import animationData from '../assets/lottiefile3.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Consultation = () => {
+    const scrollToContactSection = () => {
+        const productSection = document.getElementById('contact');
+        if (productSection) {
+            const targetPosition = productSection.offsetTop; // Get the position of the target element
+            const startPosition = window.pageYOffset; // Get the current position
+            const distance = targetPosition - startPosition;
+            const duration = 1000; // Duration of the scroll animation in milliseconds
+            let start = null;
+
+            const smoothScroll = (timestamp) => {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                const percentage = Math.min(progress / duration, 1);
+
+                window.scrollTo(0, startPosition + distance * ease(percentage));
+
+                if (progress < duration) {
+                    requestAnimationFrame(smoothScroll);
+                }
+            };
+
+            const ease = (t) => t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // Easing function, can be adjusted for different effects
+
+            requestAnimationFrame(smoothScroll);
+        }
+    };
     const lottieOptions = {
         loop: true,
         autoplay: true,
@@ -40,9 +66,9 @@ const Consultation = () => {
                             <h2 class="text-lg font-semibold">IT & Business Services</h2>
                         </div>
                     </div>
-                    <button
+                    <button onClick={scrollToContactSection}
                         class="mt-8 h-fit w-fit py-1 px-4 text-white rounded-md bg-blue-700 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
-                        Contact Us 
+                        Contact Us
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-4 inline-block">
                             <path stroke-linecap="round" stroke-linejoin="round"
