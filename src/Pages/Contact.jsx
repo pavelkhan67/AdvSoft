@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div class="text-center bg-white pt-10 lg:pt-12 pb-14" id='contact'>
+        <div class="text-center bg-white py-10 lg:py-12" id='contact'>
             <h2 class="uppercase text-3xl font-semibold" style={{ color: 'rgba(31, 52, 122, 1)' }}>Get In Touch</h2>
             <div class="md:flex gap-6 justify-center">
                 <button

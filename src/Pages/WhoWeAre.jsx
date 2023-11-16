@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 
 const WhoWeAre = () => {
     return (
-        <div className='md:grid grid-cols-2 px-2 pt-10 lg:pt-12' id='about'>
+        <div className='md:grid grid-cols-2 px-1 lg:px-0 pt-10 lg:pt-12' id='about'>
             <div className='pe-2 flex flex-col justify-center text-justify pr-2 md:pr-5'>
                 <TypeAnimation
                     className='text-3xl md:text-4xl font-semibold mb-3' style={{ color: 'rgba(31, 52, 122, 1)' }}
@@ -27,11 +27,13 @@ const WhoWeAre = () => {
                     repeat={Infinity} // Repeat this Animation Sequence infinitely
                     reset={true}
                 />
-                <Fade left><p className='py-2 text-blue-400'>Adventure Soft Limited a high tech innovative IT consulting & software development power-house</p></Fade>
-                <p>Welcome to Adventure Soft Ltd, a dynamic private software technology park committed to delivering innovative and tailored solutions. Our hub of creativity and technical expertise harnesses the latest technologies to drive your business forward.</p>
+                <div className='ps-1 lg:ps-0'>
+                    <Fade left><p className='py-2 text-blue-400'>Adventure Soft Limited a high tech innovative IT consulting & software development power-house</p></Fade>
+                    <p>Welcome to Adventure Soft Ltd, a dynamic private software technology park committed to delivering innovative and tailored solutions. Our hub of creativity and technical expertise harnesses the latest technologies to drive your business forward.</p>
 
-                <p>Choose Us for unparalleled technological prowess and customer-centric solutions. Our dedicated team ensures innovation, reliability, and security, providing you with a competitive edge in the dynamic digital landscape.</p>
-                <div><img className='h-14 w-48 mt-2 rounded-sm' src={img7} alt="" /></div>
+                    <p>Choose Us for unparalleled technological prowess and customer-centric solutions. Our dedicated team ensures innovation, reliability, and security, providing you with a competitive edge in the dynamic digital landscape.</p>
+                    <div><img className='h-14 w-48 mt-2 rounded-sm' src={img7} alt="" /></div>
+                </div>
             </div>
 
             <div className='grid grid-cols-3 gap-1 md:gap-2 lg:gap-3 mt-5 md:mt-0'>

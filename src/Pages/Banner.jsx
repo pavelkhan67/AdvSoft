@@ -46,7 +46,7 @@ const Banner = () => {
                         <div className=" absolute h-full flex items-center gap-4 left-0 top-0 bg-gradient-to-r from-[#151515dc] to-[#5655557f]">
                             <div className='text-white text-start mt-10 space-y-7 w-11/12 md:w-10/12 lg:w-2/3 pl-7 md:pl-10 lg:pl-16' data-aos="fade-down-right" data-aos-duration="1000">
                                 <h2 class="text-3xl md:text-4xl font-bold">Welcome To Adventure Soft Ltd,  </h2>
-                                <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>A Custom Software Development Company</h2>
+                                <h2 class="text-3xl md:text-4xl font-bold" style={{ marginTop: '10px' }}>A Core Software Development Company</h2>
                                 <p className='text-justify'>We specialize in creating bespoke software solutions tailored to your unique business processes. Our experienced developers work closely with you to understand your requirements and deliver solutions that align perfectly with your objectives.</p>
                                 <div className='flex gap-5 '>
                                     <Link to='/places'>

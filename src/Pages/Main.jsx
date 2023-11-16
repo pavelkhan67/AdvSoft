@@ -5,12 +5,14 @@ import WhatClientsSay from './WhatClientSay';
 import Consultation from './Consultation';
 import Contact from './Contact';
 import Footer from './Footer';
+import Products from './Products';
 
 const Main = () => {
     return (
-        <div >
+        <div>
             <Banner></Banner>
             <WhoWeAre></WhoWeAre>
+            <Products></Products>
             <Consultation></Consultation>
             <WhatClientsSay></WhatClientsSay>
             <Contact></Contact>
