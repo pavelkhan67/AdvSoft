@@ -14,7 +14,7 @@ const Consultation = () => {
     };
     return (
         <div className="pt-10 lg:pt-12" id='service'>
-            <div className="text-center relative h-[550px] md:h-[420px]">
+            <div className="text-center relative h-[550px] md:h-[400px]">
                 <Lottie options={lottieOptions} height={'100%'} width={'100%'} />
                 <div className="absolute inset-0 bg-black opacity-70 flex flex-col justify-center items-center">
                     <h2 className="text-3xl md:text-4xl font-semibold text-white">Integrate, Secure & Scale Your Business</h2>
@@ -41,7 +41,7 @@ const Consultation = () => {
                         </div>
                     </div>
                     <button
-                        class="mt-8 h-fit w-fit py-2 px-4 text-white rounded-md bg-blue-700 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
+                        class="mt-8 h-fit w-fit py-1 px-4 text-white rounded-md bg-blue-700 transition-transform duration-500 hover:bg-white hover:text-blue-500 hover:scale-x-110 transform origin-center border hover:border-blue-500">
                         Contact Us 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-4 inline-block">
