@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <div>
             <div class="flex justify-between items-center py-4 md:py-1 px-2" style={{ backgroundColor: '#F7F7F7' }}>
-                <div><img className='h-12 md:h-14 w-36 md:w-40 rounded-sm' src={img1} alt="" /></div>
+                <div><img className='h-9 md:h-14 w-28 md:w-40 rounded-sm' src={img1} alt="" /></div>
                 <div class="flex justify-center items-center gap-2 md:gap-5">
-                    <h3 class="font-semibold">FOLLOW US</h3>
+                    <h3 class="text-sm   md:text-base font-semibold">FOLLOW US</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">z
                         <path
                             d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -67,12 +67,12 @@ const Footer = () => {
                 <div class="flex justify-between px-2 text-white py-3 items-center max-w-[1200px] mx-auto">
                     <div class="md:flex gap-4">
                         <a className='hidden md:flex' href=''>Sitemap</a>
-                        <a href=''>Terms Of Service</a>
+                        <a className='text-sm md:text-base' href=''>Terms Of Service</a>
                         <a  className='hidden md:flex' href=''>Privacy Policy</a>
                         <a  className='hidden md:flex' href=''>Treadmarks</a>
                     </div>
                     <div>
-                        <p class="text-white"> &#169; Adventure Soft Ltd. 2023</p>
+                        <p class="text-white text-sm md:text-base"> &#169; Adventure Soft Ltd. 2023</p>
                     </div>
                 </div>
             </section>

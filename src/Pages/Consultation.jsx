@@ -40,7 +40,7 @@ const Consultation = () => {
     };
     return (
         <div className="pt-10 lg:pt-12" id='service'>
-            <div className="text-center relative h-[550px] md:h-[400px]">
+            <div className="text-center relative h-[570px] md:h-[420px]">
                 <Lottie options={lottieOptions} height={'100%'} width={'100%'} />
                 <div className="absolute inset-0 bg-black opacity-70 flex flex-col justify-center items-center">
                     <h2 className="text-3xl md:text-4xl font-semibold text-white">Integrate, Secure & Scale Your Business</h2>

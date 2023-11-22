@@ -114,7 +114,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end flex flex-2 items-center">
                     <div className='lg:hidden'>
-                    <a className="text-xl font-semibold pe-2">Adventure Soft Ltd.</a>
+                    <a className="font-semibold pe-1">Adventure Soft Ltd.</a>
                     </div>
                     <ul className="men hidden lg:flex font-semibold me-2" >
                         <li><a className="btn btn-ghost btn-sm normal-case" href='#' onClick={(event) => handleClick(event, 'main')}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

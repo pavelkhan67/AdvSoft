@@ -36,7 +36,7 @@ const WhoWeAre = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-3 gap-1 md:gap-2 lg:gap-3 mt-5 md:mt-0'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-2 lg:gap-3 mt-5 md:mt-0'>
                 <div className='group flex flex-col justify-center items-center text-center  border border-slate-300 py-2 lg:py-5 px-1 rounded hover:shadow-md hover:border-blue-400 hover:shadow-slate-400 transition-all duration-500'>
                     <img className='w-12' src={img1} alt="" />
                     <p className='text-3xl pt-2 group-hover:text-blue-500'>2000</p>
